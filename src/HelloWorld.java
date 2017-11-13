@@ -10,6 +10,9 @@ public class HelloWorld {
 		String name = scanner.nextLine();
 		HelloUser u = new HelloUser(name);
 		u.greetUser();
+		if (scanner != null) {
+			scanner.close();
+		}
 	}
 
 }
